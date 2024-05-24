@@ -18,19 +18,14 @@ const randomOut = (arr) => {
 }
 
 const messageGenOne = (figure, theme, newAdvice) => {
-    randomOut(figure);
-    randomOut(theme);
-    randomOut(newAdvice);
+    let fig = randomOut(figure);
+    let thm = randomOut(theme);
+    let adv = randomOut(newAdvice);
+
+    console.log("The figure "+fig+" on "+thm+". "+adv) 
 }
 
 
-
-
-
-console.log(randomOut(newAdvice));
-//console.log(randomOut(advice.));
-console.log(randomOut(theme));
-
-console.log(figure[0] + ` on ` + theme[6] + `. ` + advice.power[0]);
+messageGenOne(figure, theme, newAdvice); 
 
 
